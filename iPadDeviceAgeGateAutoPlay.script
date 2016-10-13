@@ -1,0 +1,59 @@
+(*if ImageFound("iPadSafari") 
+	Click FoundImageLocation()
+end if*)
+
+if ImageFound("iPadDeviceURL","iPadURL100percent", "iPadURL") 
+	Click FoundImageLocation()
+end if
+
+click "iPadDeviceURL"
+typeText commandKey, "a"
+typetext backspace
+TypeText "http://tinyurl.com/6d9mjj6"
+TypeText Return
+
+if ImageFound("iPadRefresh") 
+	Click FoundImageLocation()
+end if
+
+waitfor 15, "iPadPosterPlay"
+Click "iPadPosterPlay"
+wait 5
+moveto "iPadAdContent"
+wait 30
+
+(*drag "iPadSlider"
+drop "iPadEndPoint2"*)
+
+click "iPadEndPoint2"
+
+waitfor 90, "iPadReplayButton1"
+moveto "iPadReplayButton1"
+
+Click "iPadReplayButton1"
+wait 5
+
+click "iPadEndPoint2"
+
+waitfor 90, "iPadReplayButton1"
+moveto "iPadReplayButton1"
+
+
+(*waitfor 15, "IPadSlider"
+
+drag "iPadSlider"
+drop "iPadEndPoint2"*)
+
+(*Click "iPadPause"
+moveto "iPadEndofSeg4RT"
+Click "iPadPlay"*)
+(*
+waitfor 130, "iPadReplayButton1"
+moveto "iPadReplayButton1"*)
+
+(*Click "iPadConfigure"
+
+Click "iPadDebugBlue"*)
+
+
+

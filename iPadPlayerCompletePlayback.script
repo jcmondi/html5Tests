@@ -1,0 +1,11 @@
+Click "iPadRefreshbutton"
+
+
+(*Click "iPadDebug"*)
+
+(*Click "iPadPlay100"*)
+Click "iPadPlay100Large"
+
+wait 47
+
+MoveTo "iPadReplayButton100"

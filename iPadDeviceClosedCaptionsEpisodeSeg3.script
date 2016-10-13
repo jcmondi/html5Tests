@@ -1,0 +1,8 @@
+drag "iPadSliderFS"
+drop "ccSeg3FS"
+
+if ImageFound("iPadPlay")
+	Click FoundImageLocation()
+end if
+
+waitFor 30,  "ccSeg3FSText"

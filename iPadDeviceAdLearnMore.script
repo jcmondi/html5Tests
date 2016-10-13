@@ -1,0 +1,36 @@
+(*Click "iPadBookmarks"
+
+Click "PlayerTestQ"*)
+
+(*if ImageFound("iPadRefresh") 
+	Click FoundImageLocation()
+end if*)
+
+(*
+waitfor 15, "iPadPosterPlay"
+Click "iPadPosterPlay"
+
+if ImageFound("iPadPosterPlay") 
+	Click FoundImageLocation()
+end if
+*)
+
+wait 10
+
+(* 1 *)
+
+if ImageFound("iPadAdContent") 
+	Moveto FoundImageLocation()
+	Click "LearnMore"
+	wait 5
+	Click "goBacktoAd"
+	wait 5
+	Click "CloseAdPage"
+	wait 5
+	Click "BackToPlayer"
+	wait 10
+	(*Click "iPadPlayButton"*)
+end if
+
+(*waitfor 30, "iPadContentTimer"
+moveTo "iPadContentTimer"*)

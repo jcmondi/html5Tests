@@ -1,0 +1,45 @@
+
+Click "iPadRefresh"
+
+(*MoveTo "iPadPosterPlay"*)
+
+(*MoveTo "iPadPlay"*)
+
+Click "iPadPosterPlay"
+Click "iPadMidPoint"
+wait 3
+
+Click "iPadSegment1"
+wait 3
+
+Click "iPadPause"
+drag "iPadSlider"
+drop "iPadMidPoint"
+
+wait 5
+
+(*Click "iPadPause"*)
+drag "iPadSlider"
+drop "iPadEndPoint2"
+
+(*Click "iPadPlay"*)
+
+waitfor 45, "iPadReplayButton1"
+
+Click "iPadReplayButton1"
+
+wait 7
+
+drag "iPadSlider"
+drop "iPadEndPoint2"
+
+waitfor "iPadReplayButton1"
+
+
+
+(*Click "iPadConfigure"
+
+Click "iPadDebugBlue"*)
+
+
+

@@ -1,0 +1,37 @@
+(*Click "iPadBookmarks"
+Click "playerTestCC"*)
+
+Click "iPadBookmarks"
+Click "PlayerTestCC"
+
+waitfor 30, "iPadPosterPlay"
+(*Click "iPadPlay"*)
+Click "iPadPosterPlay"
+
+(*if ImageFound("iPadAdContent") 
+	moveto FoundImageLocation()
+	wait 15
+end if*)
+
+if ImageFound("ccMusic")
+	MoveTo FoundImageLocation()
+end if
+
+(*moveTo "ccBUtton"*)
+
+(*waitfor 30, "ccLeftScreenText"
+waitfor 30, "ccRightScreenText"*)
+
+waitfor 40, "ccBottomScreenText"
+
+
+
+
+
+
+
+
+
+
+
+

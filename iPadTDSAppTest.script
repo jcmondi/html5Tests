@@ -1,0 +1,25 @@
+click "launchTDSapp"
+waitfor 15, "TDSAppPosterScreen"
+click "TDSAppPosterScreen"
+
+Click "AppPlayerControls"
+Click "appPauseButton"
+wait 5
+
+if ImageFound("iPadAdContent") 
+	moveto FoundImageLocation()
+	wait 35
+end if
+
+Click "LargePlayButton"
+Click "AppPlayerControls"
+Click "appPauseButton"
+
+drag "iPadSlider"
+drop "iPadEndPointApp"
+
+waitfor 20, "TDSAppPosterScreen"
+
+
+
+

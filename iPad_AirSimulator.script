@@ -1,0 +1,39 @@
+(*click "iPadSimulator"*)
+drag "iPadUnlockSlider"
+drop "iPadUnlock"
+
+
+click "SafariButton"
+wait 5
+
+click "URLfield"
+typeText commandKey, "a"
+
+typetext backspace
+
+
+TypeText "http://www.mtv-jq.mtvi.com/videos/home.jhtml"
+
+TypeText Return
+
+
+click "Tile6"
+
+
+click "FlipArrow"
+
+click "iPadSimulatorButtonSideways"
+
+click "RotateButtonUp"
+
+(*click "URLfield"
+typeText commandKey, "a"
+
+typetext backspace
+
+TypeText "http://media.mtvnservices-d.mtvi.com/player/html5/coreversions/versions/1.0.1/"
+
+click "PlayButton"*)
+
+
+

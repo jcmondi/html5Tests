@@ -1,0 +1,66 @@
+(*if ImageFound("iPadReplay", "iPadReplayButton100", "iPadReplayButton") 
+	click FoundImageLocation()
+end if*)
+
+if ImageFound("iPadBlackScreen") 
+	Click FoundImageLocation()
+end if
+
+if ImageFound("iPadHomeScreen") 
+	repeat until imageFound("IPadSafari100")
+		click "iPadSLiderDown"
+	end repeat
+	doubleclick FoundImageLocation()
+	click "IPadSliderTop"
+end if
+
+if ImageFound("iPadFullScreenNOControls") 
+	Click FoundImageLocation()
+end if
+
+put the shouldrepositionmouse into oldSRPM
+set the shouldrepositionmouse to NO
+
+if ImageFound ("doneButton") 
+	doubleClick FoundImageLocation()
+end if
+
+if ImageFound("iPadReplay", "iPadReplayButton", "iPadReplayButton100", "iPadPlay100", "iPadPlay100Large") 
+	click FoundImageLocation()
+end if
+
+
+waitfor 5, "iPadFullScreen100"
+
+click "iPadFullScreen100"
+
+if ImageFound("iPadFullScreen100") 
+	Click FoundImageLocation()
+end if
+
+if ImageFound("iPadFullScreenNOControls") 
+	Click FoundImageLocation()
+end if
+
+put the shouldrepositionmouse into oldSRPM
+set the shouldrepositionmouse to NO
+
+(*Click "iPadFullScreenMidPoint100"*)
+
+wait 5
+if ImageFound("iPadFullScreenSliderNeedle100") 
+	drag FoundImageLocation()
+	drop "iPadFullScreenEndPoint100"
+end if
+
+if ImageFound("iPadFullScreenNOControls") 
+	Click FoundImageLocation()
+end if
+
+moveto "iPadFullScreenEndTimeCode"
+
+wait 3
+
+Click "doneButton"
+
+

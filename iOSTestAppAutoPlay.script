@@ -1,0 +1,43 @@
+if ImageFound("MTVPlayer") 
+	Click FoundImageLocation()
+end if
+
+(*click "iOSAutoPlayOn"*)
+
+(*if ImageFound("CancelButton")
+	Click FoundImageLocation()
+	click "InitializePlayer"
+end if*)
+
+moveto "InitializePlayer"
+click "InitializePlayer"
+click "InitializePlayer"
+
+wait 3
+
+moveto "2x"
+click "Player"
+put the shouldrepositionmouse into oldSRPM
+set the shouldrepositionmouse to NO
+click "iOSpauseButton"
+(*drag "iOSAudioSlider"
+drop "iOSAudioMidPoint2"*)
+click "IOSAppDoneBUtton"
+
+(*click "Player"
+put the shouldrepositionmouse into oldSRPM
+set the shouldrepositionmouse to NO
+click "IOSAppDoneBUtton"*)
+
+(*click "ClearButton"
+click "CancelButton"*)
+
+
+
+
+
+
+
+
+
+

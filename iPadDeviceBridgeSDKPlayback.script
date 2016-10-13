@@ -1,0 +1,30 @@
+click "playerControls"
+
+click "ViewExample"
+(*moveto "AutoPlayExampleLabel"*)
+wait 10
+
+if ImageFound("iPadAdContent") 
+	Moveto FoundImageLocation()
+	moveto "LearnMore"
+end if
+
+click "DevicePlayerControls"
+click "iPadPause"
+
+click "doneButton"
+
+(*moveto "iPadPosterPlay"
+click "iPadPosterPlay"
+click "DevicePlayerControls"
+click "iPadPause"
+drag "iPadSlider"
+drop "iPadDeviceEndPoint"
+click "iPadPlay"*)
+
+
+(*click "Overlay"
+moveto "OverlayLabel"
+click "ViewExample"*)
+
+

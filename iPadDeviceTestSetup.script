@@ -1,0 +1,21 @@
+
+Click "iPadSafari"
+
+if ImageFound("iPadDeviceURL","iPadURL100percent", "iPadURL") 
+	Click FoundImageLocation()
+end if
+
+
+typeText commandKey, "a"
+typetext backspace
+TypeText "http://tinyurl.com/42yx5mo"
+TypeText Return
+
+
+
+if ImageFound ( "Debug") 
+	Click FoundImageLocation()
+end if
+
+(*Click "iPadRefresh"*)
+

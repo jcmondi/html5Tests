@@ -1,0 +1,47 @@
+(*Click "iPadButton"*)
+Click "iPadSafariButton"
+
+(*if ImageFound("CannotOpenPage01", "CannotOpenPage03") 
+	Click FoundImageLocation()
+end if*)
+
+Click "iPadWindow"
+Click "iPadScale"
+Click "iPad100percent"
+
+(*Click "iPadSliderTop"*)
+(*  *)
+Click "iPadHardware"
+(*Click "iPadRotateRight"*)
+Click "RotateRight"
+Click "iPadSliderTop"
+
+
+if ImageFound("iPadURL100percent", "iPadURL") 
+	Click FoundImageLocation()
+end if
+
+typeText commandKey, "a"
+typetext backspace
+TypeText "http://tinyurl.com/63as3tr"
+TypeText Return
+
+
+if ImageFound("CannotOpenPage100", "CannotOpenPage01", "CannotOpenPage03") 
+	Click FoundImageLocation()
+end if
+
+
+(*Click "iPadDebug"
+
+if ImageFound ("iPadDebug") 
+	Click FoundImageLocation()
+end if
+
+if ImageFound ("iPadDebug") 
+	Click FoundImageLocation()
+end if*)
+
+
+
+

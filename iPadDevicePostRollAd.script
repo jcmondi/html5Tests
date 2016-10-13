@@ -1,0 +1,41 @@
+if ImageFound("iPadRefresh") 
+	Click FoundImageLocation()
+end if
+
+waitfor 15, "iPadPosterPlay"
+Click "iPadPosterPlay"
+wait 10
+
+(*preRoll*)
+waitfor 20, "iPadAdContent"
+moveto, "iPadAdContent"
+
+drag "iPadSlider"
+drop "iPadMidPoint"
+
+(*midRoll*)
+
+waitfor 20, "iPadAdContent"
+moveto, "iPadAdContent"
+
+(*postRoll*)
+
+drag "iPadSlider"
+drop "iPadEndPoint"
+
+click "iPadPlay"
+
+waitfor 20, "iPadAdContent"
+moveto, "iPadAdContent"
+
+waitfor 20, "iPadReplay"
+
+Click "iPadReplay"
+wait 10
+
+waitfor 20, "iPadPause"
+
+
+
+
+

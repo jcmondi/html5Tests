@@ -1,0 +1,13 @@
+click "iButton"
+click "iButton"
+typeText "Test App"
+click "TestAppDD"
+MoveTo "TestAppBlankPage"
+click "iButton"
+Click "PageRight"
+Click "TestAppIcon"
+MoveTo "TestAppBlankPage"
+click "iButton"
+Click "PageCenter"
+Click "BackButton"
+

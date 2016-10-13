@@ -1,0 +1,24 @@
+Click "iPadRefresh"
+
+click "iPadDeviceURL"
+typeText commandKey, "a"
+typetext backspace
+TypeText "http://tinyurl.com/65erpl4"
+TypeText Return
+
+(*Click "iPadPlay"*)
+Click "iPadPosterPlay"
+wait 4
+
+waitfor 60, "iPadReplayButton1"
+
+Click "iPadReplayButton1"
+waitfor 70, "iPadReplayButton1"
+moveto "iPadReplayButton1"
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+(*
+if ImageFound("iPadRefresh") 
+	Click FoundImageLocation()
+end if
+
+waitfor 15, "iPadPosterPlay"
+Click "iPadPosterPlay"
+
+if ImageFound("iPadPosterPlay") 
+	Click FoundImageLocation()
+end if
+
+wait 10*)
+
+if ImageFound("iPadAdContent") 
+(*Moveto FoundImageLocation()
+	Click "LearnMore"
+	wait 5
+	Click "goBacktoAd"
+	wait 5
+	Click "CloseAdPage"
+	wait 5
+	Click "BackToPlayer"
+	wait 10
+*)
+	
+	Click "iPadPlayButton"
+end if
+
+
+
+(*click "iPadPlayButton"
+wait 3
+click "iPadPause"
+click "iPadPlayButton"
+
+waitfor 30, "iPadContentTimer"
+moveTo "iPadContentTimer"*)
+
+
+(*wait 15*)
+
+(*click "iPadPlayerControlsMTV"*)
+(*click "iPadEndPoint2"
+
+
+waitfor 30, "iPadReplay"
+moveto "iPadReplay"*)
+
+
+
+

@@ -1,0 +1,90 @@
+(*Click "iPadRefresh"
+
+click "iPadDeviceURL"
+typeText commandKey, "a"
+typetext backspace
+TypeText "http://tinyurl.com/9zoqq4e"
+TypeText Return*)
+
+Click "iPadBookmarks"
+
+Click "playerTestCCfullEp"
+
+wait 10
+
+waitfor 20, "iPadPosterPlay"
+(*Click "iPadPlay"*)
+Click "iPadPosterPlay"
+
+if ImageFound("iPadAdContent") 
+	moveto FoundImageLocation()
+	wait 15
+end if
+
+waitFor 30, "ccBUtton"
+(*Click "ccBUtton"*)
+waitFor 30, "ccSeg1Text"
+moveTo  "ccSeg1Text"
+
+click "iPadPause"
+
+(*
+Click "iPadFullScreen"
+
+if ImageFound("ccSeg1TextMusic1FS")
+	moveto FoundImageLocation()
+end if
+
+if ImageFound("ccSeg1TextFS")
+	moveto FoundImageLocation()
+end if
+
+if ImageFound("ccSeg1TextMusic1FS")
+	moveto FoundImageLocation()
+end if
+
+click "iPadPlay"
+
+waitFor 60, "ccSeg2FSText"
+
+drag "iPadSliderFS"
+drop "ccSeg3FS"
+
+if ImageFound("iPadPlay")
+	Click FoundImageLocation()
+end if
+
+waitFor 30,  "ccSeg3FSText"
+*)
+
+
+
+
+
+
+
+
+(*
+drag "iPadSlider"
+drop "ccSeg3FS"
+
+
+if ImageFound("iPadSlider") 
+	drag FoundImageLocation()
+	drop "iPadEndPoint2"
+end if
+
+
+waitfor 70, "iPadReplay"
+*)
+
+(*Click "iPadReplayButton1"
+waitfor 70, "iPadReplayButton1"*)
+(*moveto "iPadReplay"*)
+
+
+
+
+
+
+

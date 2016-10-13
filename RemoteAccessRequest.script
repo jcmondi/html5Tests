@@ -1,0 +1,3 @@
+if ImageFound ( "RemoteAccessRequest") 
+	Click "Accept"
+end if

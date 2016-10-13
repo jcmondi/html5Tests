@@ -1,0 +1,20 @@
+Moveto "iPadSafari"
+
+Click "iPadSafari"
+
+
+if ImageFound("iPadURL100percent") 
+	Click FoundImageLocation()
+end if
+
+
+if ImageFound("iPadURL100percent", "iPadURL") 
+	Click FoundImageLocation()
+end if
+
+typeText commandKey, "a"
+typetext backspace
+TypeText "http://tinyurl.com/63as3tr"
+TypeText Return
+
+

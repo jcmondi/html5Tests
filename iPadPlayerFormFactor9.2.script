@@ -1,0 +1,22 @@
+Click "iPadRefreshButton"
+
+
+if ImageFound ("ConfigureTab") 
+	Click FoundImageLocation()
+end if
+
+
+click "FormFactorField"
+typeText commandKey, "a"
+
+typetext backspace
+
+typeText "1:0.9:2"
+
+Click "ApplyButton"
+
+Click "PosterPlay"
+
+(*Click "DebugTab"*)
+
+MoveTo "iPadReplay" e

@@ -1,0 +1,37 @@
+if ImageFound("MTVPlayer") 
+	Click FoundImageLocation()
+end if
+
+click "iOSAutoPlayOFF"
+
+moveto "InitializePlayer"
+click "InitializePlayer"
+
+waitfor 5, "iOSclickToPlaySouthPark"
+
+click "iOSclickToPlaySouthPark"
+click "iOSclickToPlaySouthPark"
+
+(*moveto "2x"
+click "Player"
+put the shouldrepositionmouse into oldSRPM
+set the shouldrepositionmouse to NO
+moveto "IOSAppDoneBUtton"*)
+
+click "Player"
+put the shouldrepositionmouse into oldSRPM
+set the shouldrepositionmouse to NO
+click "iOSpauseButton"
+
+(*click "iOSplayButton"*)
+
+drag "iOSAudioSlider"
+drop "iOSAudioMidPoint2"
+
+click "iOSplayButton"
+
+click "iOSAudioMidPoint"
+
+click "ClearButton"
+click "CancelButton"
+

@@ -1,0 +1,26 @@
+(*click "AutoPlay"*)
+(*click "ViewExample"*)
+
+click "playerControls"
+
+click "ViewExample"
+
+MoveTo "DoneButton"
+
+if ImageFound("iPadAdContent") 
+	Moveto FoundImageLocation()
+	moveto "LearnMore"
+	wait 30
+end if
+
+
+wait 15
+
+if ImageFound("DoneButton")
+	MoveTo FoundImageLocation()
+	LogError "DoneButton Persists"
+end if
+
+click "DevicePlayerControls"
+click "DoneButton"
+

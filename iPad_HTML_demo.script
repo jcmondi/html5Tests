@@ -1,0 +1,26 @@
+click "iPad"
+wait 10
+
+click "Safari_iPhone"
+click "doneButton"
+click "URL_"
+typeText commandKey, "a"
+typetext backspace
+
+(*TypeText "http://media.mtvnservices-d.mtvi.com/player/html5/coreversions/versions/1.0.1/"*)
+
+typetext "http://www.mtv.com/videos/home.jhtml"
+
+click "goButton"
+
+
+
+
+
+
+
+
+
+
+
+

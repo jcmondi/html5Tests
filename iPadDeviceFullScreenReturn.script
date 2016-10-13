@@ -1,0 +1,32 @@
+Click "iPadRefresh"
+
+(*MoveTo "iPadPosterPlay"*)
+
+(*MoveTo "iPadPlay"*)
+waitfor 7, "PosterPlay"
+
+Click "iPadPosterPlay"
+
+Click "iPadFullScreen"
+
+(*drag "iPadSliderFS"
+drop "iPadMidPointFS"
+
+click "iPadPause"
+wait 3
+Moveto "iPadMidPointRTFS"
+click "iPadPlayFS"*)
+
+drag "iPadSliderFS"
+drop "iPadEndPointFS"
+
+Click "iPadFullScreen"
+click "iPadPause"
+MoveTo "iPadEndofSeg4RT"
+click "iPadPlay"
+
+waitfor 44, "iPadReplay"
+moveto "iPadReplay"
+
+
+

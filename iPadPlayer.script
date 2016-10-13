@@ -1,0 +1,33 @@
+Click "iPadButton"
+Click "iPadSafariButton"
+
+if ImageFound("CannotOpenPage01", "CannotOpenPage03") 
+	Click FoundImageLocation()
+end if
+
+Click "iPadWindow"
+Click "iPadScale"
+Click "iPad100percent"
+
+(*Click "iPadSliderTop"*)
+
+Click "iPadHardware"
+(*Click "iPadRotateRight"*)
+Click "RotateRight"
+Click "iPadSliderTop"
+
+
+if ImageFound("iPadURL100percent", "iPadURL") 
+	Click FoundImageLocation()
+end if
+
+typeText commandKey, "a"
+typetext backspace
+TypeText "http://media.mtvnservices-d.mtvi.com/player/html5/gwtversions/test/#src=/player/html5/gwtversions/0.2.4/MediaPlayer.html"
+TypeText Return
+
+if ImageFound("CannotOpenPage100", "CannotOpenPage01", "CannotOpenPage03") 
+	Click FoundImageLocation()
+end if
+
+

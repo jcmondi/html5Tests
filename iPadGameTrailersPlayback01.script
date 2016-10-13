@@ -1,0 +1,37 @@
+Click "iPadBookmarks"
+
+Click "gtTest01"
+
+if ImageFound("iPadAdContent") 
+	moveto FoundImageLocation()
+	wait 35
+end if
+
+(*Click "iPadRefresh"*)
+
+(*MoveTo "iPadPosterPlay"*)
+(*MoveTo "iPadPlay"*)
+
+waitfor 60, "iPadPosterPlay"
+Click "iPadPosterPlay"
+
+waitfor 30, "IPadPause"
+Click "IPadPause"
+wait 5
+
+drag "iPadSlider"
+drop "iPadEndPoint2"
+
+if ImageFound("iPadAdContent") 
+	moveto FoundImageLocation()
+	wait 35
+end if
+
+wait 5
+
+if ImageFound("iPadPlay") 
+	click FoundImageLocation()
+end if
+
+waitfor 120, "iPadReplay"
+moveto "iPadReplay"

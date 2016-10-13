@@ -1,0 +1,29 @@
+click "PlayerControls"
+(*moveTo "Optimized"*)
+(*click "Optimized"*)
+moveTo "Native"
+click "Native"
+
+(*moveTo "NativeCustomized"*)
+click "ViewExample" (*Optimized *)
+wait 15
+click "DevicePlayerControls"
+click "NativePause"
+moveto "iPadPosterPlay"
+drag "NativeSlider"
+drop "NativeEndPoint"
+Click "NativeFullScreen"
+Click "NativeFullScreenPlay"
+Click "Done" 
+
+
+(* Stuck at end of Video - Native FS *)
+
+
+(*
+click "iPadPosterPlay"
+click "DevicePlayerControls"
+click "iPadPause"
+drag "iPadSlider"
+
+*)

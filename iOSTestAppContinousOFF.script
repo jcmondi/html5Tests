@@ -1,0 +1,30 @@
+if ImageFound("MTVPlayer") 
+	Click FoundImageLocation()
+end if
+
+click "iOSAppContinousPlayOFF"
+
+(*moveto "InitializePlayer"*)
+click "InitializePlayer"
+
+(*moveto "iOSclickToPlaySouthPark"
+click "iOSclickToPlaySouthPark"
+click "iOSclickToPlaySouthPark"*)
+
+wait 5
+
+click "Player"
+put the shouldrepositionmouse into oldSRPM
+set the shouldrepositionmouse to NO
+click "iOSpauseButton"
+
+(*click "iOSplayButton"*)
+
+(*drag "iOSAudioSlider"
+drop "iOSAudioMidPoint2"*)
+
+click "iOSplayButton"
+drag "iOStimelineSlider"
+drop "iOStimelineMidPoint"
+
+moveto "iOSAppContinousPlayOFF"

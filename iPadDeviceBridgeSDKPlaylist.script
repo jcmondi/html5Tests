@@ -1,0 +1,118 @@
+click "Playlist"
+(*moveTo "Optimized"*)
+(*click "Optimized"*)
+(*moveTo "Native"
+click "Native"*)
+
+waitfor 10, "Playlistitem01"
+
+click "PlaylistItem01"
+waitfor 10, "Done"
+click "DevicePlaylistControls"
+click "iPadPause"
+moveto "iPadPosterPlay"
+
+click "DevicePlaylistControls"
+drag "iPadSlider"
+drop "PlaylistEndPoint"
+
+if ImageFound("iPadPosterPlay") 
+	click FoundImageLocation()
+end if
+
+(*moveto "Done"*)
+
+(*
+wait 10
+(*click "DevicePlaylistControls"
+moveto "Playlist01Clip02"*)
+
+click "DevicePlaylistControls"
+click "iPadPause"
+drag "iPadSlider"
+drop "PlayerEndPoint"
+
+if ImageFound("iPadPosterPlay") 
+	click FoundImageLocation()
+end if
+*)
+
+(*
+wait 10
+
+click "DevicePlaylistControls"
+click "iPadPause"
+moveto "iPadPosterPlay"
+
+click "DevicePlaylistControls"
+drag "iPadSlider"
+drop "PlayerEndPoint"
+
+if ImageFound("iPadPosterPlay") 
+	click FoundImageLocation()
+end if
+*)
+
+(*
+wait 10
+
+click "DevicePlaylistControls"
+click "iPadPause"
+moveto "iPadPosterPlay"
+
+click "DevicePlaylistControls"
+drag "iPadSlider"
+drop "PlayerEndPoint"
+
+if ImageFound("iPadPosterPlay") 
+	click FoundImageLocation()
+end if
+
+*)
+(*wait 10
+
+
+click "DevicePlaylistControls"
+click "iPadPause"
+moveto "iPadPosterPlay"
+
+click "DevicePlaylistControls"
+drag "iPadSlider"
+drop "PlayerEndPoint"
+
+if ImageFound("iPadPosterPlay") 
+	click FoundImageLocation()
+end if
+
+moveto "done"
+click "done"*)
+
+
+
+
+
+
+
+
+
+(*
+click "NativePause"
+moveto "iPadPosterPlay"
+drag "NativeSlider"
+drop "NativeEndPoint"
+Click "NativeFullScreen"
+Click "NativeFullScreenPlay"
+Click "Done" 
+*)
+
+
+(* Stuck at end of Video - Native FS *)
+
+
+(*
+click "iPadPosterPlay"
+click "DevicePlayerControls"
+click "iPadPause"
+drag "iPadSlider"
+
+*)

@@ -1,0 +1,122 @@
+click "iPadButton"
+
+Click "iPadSafariButton"
+
+(*Click "iPadURL"
+*Click "iPadURL2"*)
+
+
+(*typeText commandKey, "a"
+typetext backspace*)
+
+(*Click "iPadWindow"
+Click "iPadScale"
+Click "iPad100percent"*)
+
+(*Click "iPadHardware"
+Click "iPadRotateRight"
+Click "RotateRight"*)
+
+(*Click "iPadSliderTop"
+Click "iPadURL100percent"*)
+
+Click "iPadURL"
+
+typeText commandKey, "a"
+typetext backspace
+
+TypeText "http://www.mtv-jq.mtvi.com/global/security/authorizer.jhtml"
+TypeText Return
+Moveto "CookieSet"
+
+(*MoveTo "CookieSet01"*)
+
+
+(*Click "iPadURL100percent"*)
+Click "iPadURL"
+typeText commandKey, "a"
+typetext backspace
+TypeText "http://www.mtv-jq.mtvi.com/global/music/videos/lite/touch/authorizer.jhtml"
+TypeText Return
+(*MoveTo "userAgentPlatform01"*)
+MoveTo "userAgentPlatform"*)
+
+
+(*Click "iPadURL100percent"*)
+Click "iPadURL"
+typeText commandKey, "a"
+typetext backspace
+TypeText "http://www.mtv-jq.mtvi.com/music/videos/"
+TypeText Return
+
+MoveTo "Miranda50Vert"
+Click "Miranda50Vert"
+
+WaitFor 10, "MTVPosterPlayButton50"
+
+Wait 400
+
+MoveTo "MTVReplayButton50"
+
+
+(*Click "iPadHardware"
+Click "iPadRotateLeft"
+Click "iPadSliderTop"*)
+
+(*Click "iPadSliderDown"*)
+Moveto "Martin50Vert"
+Click "Martin50Vert"
+
+
+(*Click "MTVPosterPlayButton"*)
+(*Click "MTVPosterPlayButton50"*)
+Click "MTVControlPanel"
+put the shouldrepositionmouse into oldSRPM
+set the shouldrepositionmouse to NO
+
+Wait 40
+Click "MTVControlPanel"
+Click "MTVPauseButton50"
+
+drag "MTVSliderNeedle50"
+drop "MTVEndPoint50_01"
+
+Click "Martin50"
+Click "MTVPosterPlayButton50"
+Click "MTVControlPanel"
+
+
+
+Click "iPadControlPanel2"
+
+Click "iPadPauseButton"
+
+
+Click "iPadControlPanel2"
+
+drag "iPadSliderNeedle"
+drop "iPadEndPoint"
+(*Click "iPadPlayButton"*)
+
+Click "iPadReplayButton"
+
+
+
+Click "iPadControlPanel2"
+Click "iPadPauseButton"
+Click "iPadControlPanel2"
+
+WaitFor "iPadRePlayButton"
+
+MoveTo "iPadRePlayButton"
+
+(*drag "iPadSliderNeedle"
+drop "iPadEndPoint"
+
+Click "iPadEndPoint"
+(*Click "iPadPlayButton"*)
+
+Click "iPadFacebookButton"*)
+
+
+(*Click "iPadRePlayButton"*)

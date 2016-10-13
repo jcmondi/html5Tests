@@ -1,0 +1,22 @@
+(*2*)
+
+drag "iPadSlider"
+drop "iPadCCendOFtimeline"
+
+if ImageFound("iPadPlay")
+	MoveTo FoundImageLocation()
+end if
+
+waitfor 30, "iPadReplay"
+Click "iPadReplay"
+
+if ImageFound("ccMusic")
+	MoveTo FoundImageLocation()
+end if
+
+(*moveTo "ccBUtton"*)
+
+(*waitfor 30, "ccLeftScreenText"
+waitfor 30, "ccRightScreenText"*)
+
+waitfor 40, "ccBottomScreenText"

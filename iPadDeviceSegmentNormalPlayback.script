@@ -1,0 +1,27 @@
+(*if ImageFound("iPadSafari") 
+	Click FoundImageLocation()
+end if*)
+
+Click "iPadRefresh"
+
+(*MoveTo "iPadPosterPlay"*)
+
+(*MoveTo "iPadPlay"*)
+waitfor 10,  "iPadPosterPlay"
+Click "iPadPosterPlay"
+wait 4
+
+waitfor 330, "iPadSegment2Position"
+
+click "iPadPause"
+
+moveto "iPadSegment2RT"
+
+click "iPadRefresh"
+
+(*waitfor 1400, "iPadReplayButton1"*)
+
+
+
+
+

@@ -1,0 +1,16 @@
+click "playerControls"
+
+click "ViewExample"
+
+if ImageFound(20, "iPadAdContent") 
+	Moveto FoundImageLocation()
+	click "LearnMore"
+end if
+
+waitfor 10, "adDoneButton"
+click "adDoneButton"
+
+moveto "iPadPosterPlay"
+
+click "doneButton"
+

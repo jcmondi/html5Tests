@@ -1,0 +1,18 @@
+if connectionInfo().status is not "Connected" then
+	connect (ServerID:"172.18.128.228", password:"1234")
+end if
+
+(*if connectionInfo().status is not "Connected" then
+	connect (Name:"Adams", password:"1234")
+end if*)
+
+
+
+
+
+
+
+
+
+
+

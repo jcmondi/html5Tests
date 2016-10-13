@@ -1,0 +1,47 @@
+Click "iPadButton"
+Click "iPadSafariButton"
+
+(*
+if ImageFound("hanging02", "handingImage",)
+	Click FoundImageLocation()
+end if
+
+if ImageFound("iPadButton")
+	Click FoundImageLocation()
+end if
+
+if ImageFound("iPadSafariButton")
+	Click FoundImageLocation()
+end if
+*)
+
+if ImageFound("CannotOpenPage01", "CannotOpenPage03") 
+	Click FoundImageLocation()
+end if
+waitfor 10, "iPadURL"
+Click "iPadURL"
+typeText commandKey, "a"
+typetext backspace
+TypeText "http://www.mtv-jq.mtvi.com/music/videos/"
+TypeText Return
+
+if ImageFound("CannotOpenPage01", "CannotOpenPage03") 
+	Click FoundImageLocation()
+end if
+
+Wait 20
+
+if ImageFound("Martin50sm", "Martin50Vert", "Martin50Top")
+	Click FoundImageLocation()
+end if
+
+
+Wait 30
+
+if ImageFound("MTVPosterPlayButton50")
+	Click FoundImageLocation()
+end if	
+
+Waitfor 400, "MTVRePlayButton50"
+
+MoveTo "MTVReplayButton50"

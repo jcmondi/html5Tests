@@ -1,0 +1,24 @@
+click "playerControls"
+click "ViewExample"
+
+MoveTo "DoneButton"
+
+if ImageFound("iPadAdContent") 
+	Moveto FoundImageLocation()
+	moveto "LearnMore"
+	wait 30
+end if
+
+wait 5
+
+click "DevicePlayerControls"
+click "iPadPause"
+moveto "iPadPosterPlay"
+click "iPadPosterPlay"
+click "DevicePlayerControls"
+drag "iPadSlider"
+drop "iPadDeviceMidPoint"
+moveTo "midPointCRT"
+click "iPadDeviceEndPoint"
+
+moveto "PlayerControls"

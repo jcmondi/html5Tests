@@ -1,0 +1,42 @@
+if ImageFound("iPadRefresh") 
+	Click FoundImageLocation()
+end if
+
+waitfor 15, "iPadPosterPlay"
+Click "iPadPosterPlay"
+wait 5
+
+if ImageFound("iPadAdContent") 
+	Moveto FoundImageLocation()
+	click "iPadPause"
+	wait 15
+	moveto "iPadAdContent"
+	click "iPadPlay"
+end if
+
+(*moveto "iPadContentTitle"*)
+
+
+(*
+
+drag "iPadSlider"
+drop "iPadEndPoint2"
+
+wait 20
+
+if ImageFound("iPadSlider") 
+	drag FoundImageLocation()
+	drop "iPadEndPoint2"
+end if
+
+
+waitfor 90, "iPadReplayButton1"
+moveto "iPadReplayButton1"
+
+Click "iPadReplayButton1"
+wait 70
+Moveto "iPad01"
+*)
+
+
+

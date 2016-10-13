@@ -1,0 +1,11 @@
+if ImageFound("iPadRefresh") 
+	Click FoundImageLocation()
+end if
+
+waitfor 10, "Camera2"
+Click "Camera2"
+
+waitfor 20, "iPadPosterPlay"
+moveto "iPadPosterPlay"
+
+click "iPadBackButton"

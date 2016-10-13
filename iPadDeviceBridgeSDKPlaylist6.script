@@ -1,0 +1,20 @@
+wait 10
+
+
+click "DevicePlaylistControls"
+click "iPadPause"
+moveto "iPadPosterPlay"
+
+click "DevicePlaylistControls"
+drag "iPadSlider"
+drop  "PlaylistEndPoint"
+
+if ImageFound("iPadPosterPlay") 
+	click FoundImageLocation()
+end if
+
+moveto "done"
+click "done"
+
+Click "AutoPlay"
+

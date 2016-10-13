@@ -1,0 +1,15 @@
+(*Click "iPadURL"
+typeText commandKey, "a"
+typetext backspace
+TypeText "http://www.mtv-jq.mtvi.com/music/videos/"
+TypeText Return*)
+
+MoveTo "Martin03"
+Click "Martin03"
+WaitFor 10, "MTVPosterPlayButton50"
+
+
+Click "MTVPosterPlayButton50"
+wait 400
+
+MoveTo "MTVReplayButton50"

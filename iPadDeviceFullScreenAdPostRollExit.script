@@ -1,0 +1,35 @@
+if ImageFound("iPadRefresh") 
+	Click FoundImageLocation()
+end if
+
+(*MoveTo "iPadPosterPlay"*)
+
+(*MoveTo "iPadPlay"*)
+waitfor 10, "iPadPosterPlay"
+Click "iPadPosterPlay"
+Click "iPadFullScreen"
+Click "iPadFullScreen"
+
+(*1*)
+if ImageFound("iPadAdContent") 
+	moveto FoundImageLocation()
+end if
+
+wait 30
+
+moveto "iPadFullScreen"
+
+click "iPadFullScreen"
+
+drag "iPadSliderFS"
+drop "iPadEndPointFS"
+
+if ImageFound("iPadAdContent") 
+	moveto FoundImageLocation()
+end if
+
+waitfor 30, "iPadExitFullScreen"
+click  "iPadExitFullScreen"
+
+moveto "iPadPause"
+

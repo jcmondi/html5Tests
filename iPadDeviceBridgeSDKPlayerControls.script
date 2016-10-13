@@ -1,0 +1,10 @@
+click "playerControls"
+click "ViewExample"
+
+moveto "iPadPosterPlay"
+click "iPadPosterPlay"
+click "DevicePlayerControls"
+click "iPadPause"
+drag "iPadSlider"
+drop "iPadDeviceEndPoint"
+click "iPadPlay"

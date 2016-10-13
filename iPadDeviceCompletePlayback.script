@@ -1,0 +1,38 @@
+(*Click "iPadRefresh"
+
+click "iPadDeviceURL"
+typeText commandKey, "a"
+typetext backspace
+TypeText "http://tinyurl.com/65erpl4"
+TypeText Return*)
+
+Click "iPadBookmarks"
+
+Click "PlayerTestQ"
+
+waitfor 30, "iPadPosterPlay"
+(*Click "iPadPlay"*)
+Click "iPadPosterPlay"
+wait 30
+
+drag "iPadSlider"
+drop "iPadEndPoint2"
+
+if ImageFound("iPadSlider") 
+	drag FoundImageLocation()
+	drop "iPadEndPoint2"
+end if
+
+
+waitfor 70, "iPadReplay"
+
+(*Click "iPadReplayButton1"
+waitfor 70, "iPadReplayButton1"*)
+moveto "iPadReplay"
+
+
+
+
+
+
+

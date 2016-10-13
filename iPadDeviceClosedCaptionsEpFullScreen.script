@@ -1,0 +1,13 @@
+Click "iPadFullScreen"
+
+if ImageFound("ccSeg1TextMusic1FS")
+	moveto FoundImageLocation()
+end if
+
+if ImageFound("ccSeg1TextFS")
+	moveto FoundImageLocation()
+end if
+
+if ImageFound("ccSeg1TextMusic1FS")
+	moveto FoundImageLocation()
+end if

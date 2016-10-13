@@ -1,0 +1,8 @@
+click "iPadRefresh"
+
+waitfor 10, "iPadPosterPlay"
+(*Click "iPadPlay"*)
+Click "iPadPosterPlay"
+wait 30
+
+drag "iPadSlider"

@@ -1,0 +1,47 @@
+(*if ImageFound("kcaAPP") 
+	Click FoundImageLocation()
+end if*)
+
+(*if ImageFound("kcaHome") 
+	Click FoundImageLocation()
+end if*)
+
+
+(*
+waitfor 5, "kcaVideos"
+Click "kcaVideos"
+*)
+
+click "kcaAppPlayVideo"
+
+(*
+if ImageFound("iPadAdContent") 
+	Moveto FoundImageLocation()
+end if
+*)
+
+(*click "iPadPause"
+moveto "iPadPlay"*)
+
+(*postRoll*)
+
+wait 5
+
+click "kcaAppControls"
+click "iPadPause"
+drag "iPadSlider"
+drop "kcaAppEndPoint"
+
+if ImageFound("AppAdContent") 
+	Moveto FoundImageLocation()
+end if
+
+moveto "kcaAppPlayVideo"
+
+
+
+
+
+
+
+

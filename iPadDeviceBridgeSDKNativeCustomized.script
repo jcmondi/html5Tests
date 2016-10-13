@@ -1,0 +1,19 @@
+click "PlayerControls"
+click "NativeCustomized"
+
+click "ViewExample" (*Optimized *)
+wait 15
+click "DevicePlayerControls"
+click "NativeCustomPause"
+click "NativeCustomButton"
+moveto "OverlayImageText"
+click "overlayImage"
+
+
+moveto "iPadPosterPlay"
+drag "NativeSlider"
+drop "NativeEndPoint"
+Click "NativeFullScreen"
+Click "NativeFullScreenPlay"
+Click "Done" 
+

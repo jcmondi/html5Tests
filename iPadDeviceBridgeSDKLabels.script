@@ -1,0 +1,8 @@
+click "OverView"
+moveto "OverViewLabel"
+
+click "AutoPlay"
+moveto "AutoPlayLabel"
+
+click "AutoPlayOn"
+click "AutoPlayOFF"

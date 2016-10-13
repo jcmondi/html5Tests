@@ -1,0 +1,26 @@
+(*if ImageFound("iPadSafari") 
+	Click FoundImageLocation()
+end if*)
+
+(*if ImageFound("iPadDeviceURL","iPadURL100percent", "iPadURL") 
+	Click FoundImageLocation()
+end if
+
+click "iPadDeviceURL"
+typeText commandKey, "a"
+typetext backspace
+TypeText "http://tinyurl.com/3hae2v9"
+TypeText Return*)
+
+if ImageFound("iPadRefresh") 
+	Click FoundImageLocation()
+end if
+
+waitfor 15, "iPadPosterPlay"
+Click "iPadPosterPlay"
+wait 5
+
+moveto "liveDisplay"
+
+
+

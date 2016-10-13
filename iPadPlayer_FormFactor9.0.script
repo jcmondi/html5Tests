@@ -1,0 +1,59 @@
+(*if ImageFound("iPadReplay", "iPadReplayButton100", "iPadReplayButton") 
+	click FoundImageLocation()
+end if*)
+
+if ImageFound("iPadBlackScreen") 
+	Click FoundImageLocation()
+end if
+
+if ImageFound("iPadHomeScreen") 
+	repeat until imageFound("IPadSafari100")
+		click "iPadSLiderDown"
+	end repeat
+	doubleclick FoundImageLocation()
+	click "IPadSliderTop"
+end if
+
+if ImageFound("iPadFullScreenNOControls") 
+	Click FoundImageLocation()
+end if
+
+put the shouldrepositionmouse into oldSRPM
+set the shouldrepositionmouse to NO
+
+
+if ImageFound ("doneButton") 
+	doubleClick FoundImageLocation()
+end if
+
+if ImageFound("iPadReplay", "iPadReplayButton", "iPadReplayButton100", "iPadPlay100", "iPadPlay100Large") 
+	click FoundImageLocation()
+end if
+
+Click "iPadRefreshButton"
+
+
+if ImageFound ("ConfigureTab") 
+	Click FoundImageLocation()
+end if
+
+
+click "FormFactorField"
+typeText commandKey, "a"
+
+typetext backspace
+
+typeText "1:0.9:0"
+
+Click "ApplyButton"
+
+Click "PosterPlay"
+
+(*Click "DebugTab"*)
+
+MoveTo "iPadReplay"
+
+
+
+
+

@@ -1,0 +1,40 @@
+(*if connectionInfo().status is not "Connected" then
+	connect (ServerID:"172.18.130.195", password:"1234")
+end if*)
+
+(*if ImageFound("iPadSafari") 
+	Click FoundImageLocation()
+end if*)
+
+Click "iPadRefresh"
+
+(*if ImageFound ( "Debug") 
+	Click FoundImageLocation()
+end if*)
+
+(*MoveTo "iPadPosterPlay"*)
+
+(*MoveTo "iPadPlay"*)
+waitfor 15,  "iPadPosterPlay"
+Click "iPadPosterPlay"
+wait 40
+
+drag "iPadSlider"
+drop "iPadSegment1End"
+
+waitfor 100, "iPadSegment2Position"
+
+click "iPadPause"
+
+moveto "iPadSegment2RT"
+
+(*click "iPadRefresh"*)
+
+
+
+(*waitfor 1400, "iPadReplayButton1"*)
+
+
+
+
+

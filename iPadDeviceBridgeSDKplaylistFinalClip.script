@@ -1,0 +1,25 @@
+click "FinalClipPlaylist"
+wait 10
+
+click "DevicePlaylistControls"
+click "iPadPause"
+moveto "iPadPosterPlay"
+
+click "done"
+moveto "FinalClipPlaylistBlue"
+click "FinalClipPlaylistBlue"
+
+click "DevicePlaylistControls"
+moveto "DevicePlaylistState"
+
+drag "iPadSlider"
+drop "PlayerEndPoint"
+
+if ImageFound("iPadPosterPlay") 
+	click FoundImageLocation()
+end if
+
+wait 10
+
+click "DevicePlaylistControls"
+click "done"

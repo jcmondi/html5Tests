@@ -1,0 +1,113 @@
+(*click "iPadButton"*)
+
+Click "iPadSafariButton"
+
+Click "iPadURL"
+(*Click "iPadURL2"*)
+
+
+typeText commandKey, "a"
+typetext backspace
+
+TypeText "http://media.mtvnservices-d.mtvi.com/player/html5/coreversions/versions/1.0.1/"
+
+TypeText Return
+
+Click "iPadWindow"
+Click "iPadScale"
+Click "iPad100percent"
+
+Click "iPadHardware"
+(*Click "iPadRotateRight"*)
+Click "RotateRight"
+
+
+Click "iPadSliderTop"
+
+
+Click "iPadURL100percent"
+
+typeText commandKey, "a"
+typetext backspace
+
+TypeText "http://media.mtvnservices-d.mtvi.com/player/html5/coreversions/versions/1.0.1/"
+
+TypeText Return
+
+
+
+(*Click "iPadHardware"
+Click "iPadRotateLeft"
+Click "iPadSliderTop"*)
+
+
+Click "iPadPosterPlayButton"
+(*Click "iPadPlayButton"*)
+
+(*Click "iPadPlayButtonEndScreen"*)
+
+wait 10
+
+Click "iPadControlPanel2"
+
+put the shouldrepositionmouse into oldSRPM
+set the shouldrepositionmouse to NO
+(*Click "iPadPlayButton"*)
+(*Click "iPadControlPanel2"*)
+
+
+
+(*Click "iPadControlPanel2"*)
+Click "iPadPauseButton"
+Click "iPadControlPanel2"
+
+moveto "iPadSliderNeedle1"
+
+drag "iPadSliderNeedle1"
+drop "iPadEndPoint"
+(*Click "iPadPlayButton"*)
+
+Click "iPadReplayButton"
+
+
+Click "iPadControlPanel2"
+(*Click "iPadPlayButton"*)
+(*Click "iPadPauseButton"*)
+
+Click "iPadControlPanel2"
+Click "iPadPauseButton"
+Click "iPadControlPanel2"
+
+drag "iPadSliderNeedle"
+drop "iPadEndPoint"
+
+(*Click "iPadEndPoint"*)
+
+Moveto "iPadRePlayButton"
+
+
+(*
+Click "iPadPlayButton"
+
+Click "iPadFacebookButton"
+*)
+
+
+(*Click "iPadRePlayButton"*)
+
+Click "iPadHardware"
+Click "iPadRotateLeft"
+Click "iPadSliderTop"
+
+Click "iPadWindow"
+Click "iPadScale"
+Click "iPad50percent"
+
+click "iPadButton"
+
+
+
+
+
+
+

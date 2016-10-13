@@ -1,0 +1,18 @@
+click "MTVPLayer"
+moveto "InitializePlayer"
+click "InitializePlayer"
+
+click "ClearButton"
+click "CancelButton"
+
+click "InitializePlayer"
+moveto "2x"
+click "Player"
+
+
+
+
+
+
+
+

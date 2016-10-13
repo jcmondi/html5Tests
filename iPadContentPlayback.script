@@ -1,0 +1,47 @@
+(*
+click "iPadSRC"
+wait 3
+doubleclick "iPadSRC"
+
+drag "iPadEditURI"
+drop "iPadEditURI02"
+
+click "iPadCut"
+
+typeText "eb8a3abb-8d6a-47c5-9443-2818e47127f9"
+
+click "iPadCloseKeys"
+click "iPadApply"
+*)
+
+Click "iPadBookmarks"
+
+(*Click "NickMomPlayerTest"*)
+
+Click "NickMomPlayerTest02"
+
+(*Click "iPadRefresh"*)
+
+(*MoveTo "iPadPosterPlay"*)
+(*MoveTo "iPadPlay"*)
+(*  *)
+waitfor 15, "iPadPosterPlay"
+Click "iPadPosterPlay"
+
+(*if ImageFound("iPadAdContent") 
+	moveto FoundImageLocation()
+	wait 35
+end if*)
+
+Click "IPadPause"
+wait 5
+
+drag "iPadSlider"
+drop "iPadEndPoint2"
+
+
+Click "iPadPlay"
+
+waitfor 120, "iPadReplay"
+moveto "iPadReplay"
+

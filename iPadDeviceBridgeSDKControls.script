@@ -1,0 +1,21 @@
+click "PlayerControls"
+moveTo "Optimized"
+click "Optimized"
+(*moveTo "Native"
+moveTo "NativeCustomized"*)
+click "ViewExample" (*Optimized *)
+wait 15
+click "DevicePlayerControls"
+click "iPadPause"
+moveto "iPadPosterPlay"
+click "iPadPosterPlay"
+click "DevicePlayerControls"
+click "iPadPause"
+drag "iPadSlider"
+drop "PlayerEndPoint"
+
+
+
+
+
+
